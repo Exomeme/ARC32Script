@@ -58,17 +58,17 @@ if game.PlaceId == 6007475062 then
     local Scripts = Window:NewTab("Scripts")
     local Scriptsmain = Scripts:NewSection("Scripts")
     
-    Scriptsmain:NewButton("Infinite Yield", "", function()
+    Scriptsmain:NewButton("Infinite Yield", "Inf yield duhh", function()
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end)
     
-    Scriptsmain:NewButton("RemoteSpy", "", function()
+    Scriptsmain:NewButton("RemoteSpy", "Remote spy for pro hackers like me", function()
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Rspy/main/main.Lua"))()
     end)
     
-    Scriptsmain:NewButton("Chatspy", "", function()
+    Scriptsmain:NewButton("Chatspy", "Chatspy for cool gamers", function()
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Chatspy/main/Chat"))()
     end)
