@@ -41,34 +41,44 @@ if game.PlaceId == 6007475062 then
     local Waypointsmain = Waypoints:NewSection("Waypoints")
     
     
-    Waypointsmain:NewButton("Work in progress", "", function()
+    Waypointsmain:NewButton("ARMOURY", "", function()
     print("Clicked")
+    local me = game.Players.LocalPlayer.Character
+    me.HumanoidRootPart.CFrame = CFrame.new(840,46,-202)
+
     end)
     
-    Waypointsmain:NewButton("Work in progress", "", function()
+    Waypointsmain:NewButton("Control Room", "", function()
     print("Clicked")
+    local me = game.Players.LocalPlayer.Character
+    me.HumanoidRootPart.CFrame = CFrame.new(827,45,-528)
+
     end)
     
-    Waypointsmain:NewButton("Work in progress", "", function()
+    
+    Waypointsmain:NewButton("CDC / CDCZ", "", function()
     print("Clicked")
+    local me = game.Players.LocalPlayer.Character
+    me.HumanoidRootPart.CFrame = CFrame.new(-33,3,-180)
     end)
     
-    -- SCRIPT MAIN
+    
+    -- SCRIPT MAIN  -----------------------------------------------------------
     
     local Scripts = Window:NewTab("Scripts")
     local Scriptsmain = Scripts:NewSection("Scripts")
     
-    Scriptsmain:NewButton("Infinite Yield", "Inf yield duhh", function()
+    Scriptsmain:NewButton("Infinite Yield", "", function()
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end)
     
-    Scriptsmain:NewButton("RemoteSpy", "Remote spy for pro hackers like me", function()
+    Scriptsmain:NewButton("RemoteSpy", "", function()
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Rspy/main/main.Lua"))()
     end)
     
-    Scriptsmain:NewButton("Chatspy", "Chatspy for cool gamers", function()
+    Scriptsmain:NewButton("Chatspy", "", function()
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Chatspy/main/Chat"))()
     end)
