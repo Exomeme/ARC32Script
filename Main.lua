@@ -1,6 +1,6 @@
 if game.PlaceId == 6007475062 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("ARC - 32", "Serpent")
+    local Window = Library.CreateLib("ARC - 32", "GrapeTheme")
 
     -- MAIN
     local Main = Window:NewTab("Main")
@@ -123,7 +123,7 @@ end
 
 else
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("ARC - 32", "Serpent")
+    local Window = Library.CreateLib("ARC - 32, PlaceId: "..game.PlaceId, "GrapeTheme")
 
     -- MAIN
     local Main = Window:NewTab("Main")
@@ -180,13 +180,13 @@ else
     Waypointsmain:NewButton("Control Room", "", function()
     print("Clicked")
     local me = game.Players.LocalPlayer.Character
-    me.HumanoidRootPart.CFrame = CFrame.new(827,45,-528)
+    me.HumanoidRootPart.CFrame = CFrame.new(761,80,-380)
     end)
     
     Waypointsmain:NewButton("CDC / CDCZ", "", function()
     print("Clicked")
     local me = game.Players.LocalPlayer.Character
-    me.HumanoidRootPart.CFrame = CFrame.new(761,80,-380)
+    me.HumanoidRootPart.CFrame = CFrame.new(-33,3,-180)
     end)
     
     Waypointsmain:NewButton("SCP Main", "", function()
