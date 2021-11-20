@@ -98,6 +98,20 @@ if game.PlaceId == 6007475062 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Chatspy/main/Chat"))()
     end)
     
+    
+    
+    -- Credits -----------------------------------------------------------
+    local Credits = Window:NewTab("Credits")
+    local Creditsmain = Credits:NewSection("Credits")
+    Creditsmain:NewButton("Exomeme#9999 For scripting", "", function()
+    end)
+    
+    Creditsmain:NewButton("Rafuty and Idub for Beta testing", "", function()
+    end)
+    
+    Creditsmain:NewButton("And well Rayzo...", "Nothing to say about him", function()
+    end)
+    
 else
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("ARC - 32", "Serpent")
@@ -158,9 +172,7 @@ else
     print("Clicked")
     local me = game.Players.LocalPlayer.Character
     me.HumanoidRootPart.CFrame = CFrame.new(827,45,-528)
-
     end)
-    
     
     Waypointsmain:NewButton("CDC / CDCZ", "", function()
     print("Clicked")
@@ -174,17 +186,6 @@ else
     me.HumanoidRootPart.CFrame = CFrame.new(1496,44,-177)
     end)
     
-     -- Credits -----------------------------------------------------------
-    local Credits = Window:NewTab("Credits")
-    local Creditsmain = Scripts:NewSection("Credits")
-    Creditsmain:NewButton("Exomeme#9999 For scripting", "", function()
-    end)
-    
-    Creditsmain:NewButton("Rafuty and Idub for Beta testing", "", function()
-    end)
-    
-    Creditsmain:NewButton("And well Rayzo...", "Nothing to say about him", function()
-    end)
     
     -- SCRIPT MAIN  -----------------------------------------------------------
     local Scripts = Window:NewTab("Scripts")
@@ -206,7 +207,7 @@ else
     end)
     -- Credits -----------------------------------------------------------
     local Credits = Window:NewTab("Credits")
-    local Creditsmain = Scripts:NewSection("Credits")
+    local Creditsmain = Credits:NewSection("Credits")
     Creditsmain:NewButton("Exomeme#9999 For scripting", "", function()
     end)
     
