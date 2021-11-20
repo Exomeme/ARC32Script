@@ -111,7 +111,16 @@ if game.PlaceId == 6007475062 then
     
     Creditsmain:NewButton("And well Rayzo...", "Nothing to say about him", function()
     end)
-    
+
+
+elseif game.PlaceId == 5625202487 then
+
+for i,v in pairs(workspace:GetDescendants()) do
+if v:IsA("ClickDetector") then
+fireclickdetector(v)
+end
+end
+
 else
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("ARC - 32", "Serpent")
