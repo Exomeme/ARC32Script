@@ -88,11 +88,7 @@ if game.PlaceId == 6007475062 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end)
     
-    Scriptsmain:NewButton("RemoteSpy", "", function()
-    print("Clicked")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Rspy/main/main.Lua"))()
-    end)
-    
+
     Scriptsmain:NewButton("Chatspy", "", function()
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Chatspy/main/Chat"))()
@@ -164,15 +160,9 @@ else
 
     end)
     
-    PlayerSection:NewToggle("AntiAfk", "ToggleInfo", function(v)
-    if v then
+    PlayerSectionSection:NewToggle("ToggleText", "ToggleInfo", function(state)
+    if state then
         print("Toggle On")
-        local vu = game:GetService("VirtualUser")
-        game:GetService("Players").LocalPlayer.Idled:connect(function()
-        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-        wait(1)
-        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-end)
     else
         print("Toggle Off")
     end
@@ -218,12 +208,6 @@ end)
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end)
-    
-    Scriptsmain:NewButton("RemoteSpy", "", function()
-    print("Clicked")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Rspy/main/main.Lua"))()
-    end)
-    
     Scriptsmain:NewButton("Chatspy", "", function()
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Chatspy/main/Chat"))()
