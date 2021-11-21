@@ -88,7 +88,11 @@ if game.PlaceId == 6007475062 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end)
     
-
+    Scriptsmain:NewButton("RemoteSpy", "", function()
+    print("Clicked")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Rspy/main/main.Lua"))()
+    end)
+    
     Scriptsmain:NewButton("Chatspy", "", function()
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Chatspy/main/Chat"))()
@@ -132,8 +136,6 @@ else
     }
 
     game:GetService("ReplicatedStorage")["Credits Master"]:InvokeServer(unpack(args))
-
-        
     end)
 
     MainSection:NewButton("Breach Eye", "Breches the eye you dum fuck", function()
@@ -160,13 +162,6 @@ else
 
     end)
     
-    PlayerSectionSection:NewToggle("ToggleText", "ToggleInfo", function(state)
-    if state then
-        print("Toggle On")
-    else
-        print("Toggle Off")
-    end
-end)
     
     -- WAYPOINTS MAIN
     
@@ -208,6 +203,12 @@ end)
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end)
+    
+    Scriptsmain:NewButton("RemoteSpy", "", function()
+    print("Clicked")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Rspy/main/main.Lua"))()
+    end)
+    
     Scriptsmain:NewButton("Chatspy", "", function()
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Chatspy/main/Chat"))()
