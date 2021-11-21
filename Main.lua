@@ -88,10 +88,7 @@ if game.PlaceId == 6007475062 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end)
     
-    Scriptsmain:NewButton("RemoteSpy", "", function()
-    print("Clicked")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Rspy/main/main.Lua"))()
-    end)
+
     
     Scriptsmain:NewButton("Chatspy", "", function()
     print("Clicked")
@@ -204,10 +201,7 @@ else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end)
     
-    Scriptsmain:NewButton("RemoteSpy", "", function()
-    print("Clicked")
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ninjalol11/Rspy/main/main.Lua"))()
-    end)
+
     
     Scriptsmain:NewButton("Chatspy", "", function()
     print("Clicked")
