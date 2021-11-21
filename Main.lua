@@ -164,6 +164,20 @@ else
 
     end)
     
+    PlayerSection:NewToggle("AntiAfk", "ToggleInfo", function(v)
+    if v then
+        print("Toggle On")
+        local vu = game:GetService("VirtualUser")
+        game:GetService("Players").LocalPlayer.Idled:connect(function()
+        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        wait(1)
+        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+    else
+        print("Toggle Off")
+    end
+end)
+    
     -- WAYPOINTS MAIN
     
     local Waypoints = Window:NewTab("Waypoints")
