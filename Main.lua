@@ -78,6 +78,13 @@ if game.PlaceId == 6007475062 then
     local me = game.Players.LocalPlayer.Character
     me.HumanoidRootPart.CFrame = CFrame.new(398,44,-564)
     end)
+    
+    Waypointsmain:NewButton("CDC Control", "", function()
+    print("Clicked")
+    local me = game.Players.LocalPlayer.Character
+    me.HumanoidRootPart.CFrame = CFrame.new(167,47,-84)
+    end)
+    
     -- SCRIPT MAIN  -----------------------------------------------------------
     
     local Scripts = Window:NewTab("Scripts")
@@ -88,7 +95,6 @@ if game.PlaceId == 6007475062 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end)
     
-
     
     Scriptsmain:NewButton("Chatspy", "", function()
     print("Clicked")
@@ -191,6 +197,12 @@ else
     me.HumanoidRootPart.CFrame = CFrame.new(1496,44,-177)
     end)
     
+    Waypointsmain:NewButton("CDC Control", "", function()
+    print("Clicked")
+    local me = game.Players.LocalPlayer.Character
+    me.HumanoidRootPart.CFrame = CFrame.new(167,47,-84)
+    end)
+    
     
     -- SCRIPT MAIN  -----------------------------------------------------------
     local Scripts = Window:NewTab("Scripts")
@@ -200,7 +212,6 @@ else
     print("Clicked")
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
     end)
-    
 
     
     Scriptsmain:NewButton("Chatspy", "", function()
